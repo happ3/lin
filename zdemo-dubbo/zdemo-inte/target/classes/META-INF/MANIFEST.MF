@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: zdemo-inte
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Administrator
+Built-By: lhp
 Implementation-Vendor-Id: zdemo-inte
 Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse

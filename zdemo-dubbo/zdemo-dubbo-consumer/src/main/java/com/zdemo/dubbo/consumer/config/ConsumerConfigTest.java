@@ -16,14 +16,14 @@ public class ConsumerConfigTest {
 	@Bean
 	public ApplicationConfig applicationConfig() {
 		ApplicationConfig applicationConfig = new ApplicationConfig();
-		applicationConfig.setName(DubboParam.applicationName);
+		applicationConfig.setName("xxx");
 		return applicationConfig;
 	}
 	// 连接注册中心配置
 	@Bean
 	public RegistryConfig registryConfig() {
 		RegistryConfig registryConfig =new RegistryConfig();
-		registryConfig.setAddress(DubboParam.zk_address);
+		registryConfig.setAddress("zookeeper://192.168.0.250:2181");
 		return registryConfig;
 	}
 	
@@ -31,7 +31,7 @@ public class ConsumerConfigTest {
 	@Bean
 	public ProtocolConfig protocolConfig() {
 		ProtocolConfig protocolConfig =new ProtocolConfig();
-		protocolConfig.setName(DubboParam.dubbo_protocol);
+		protocolConfig.setName("dubbo");
 		protocolConfig.setPort(12345);
 		protocolConfig.setThreads(200);
 		return protocolConfig;
@@ -45,12 +45,5 @@ public class ConsumerConfigTest {
 		return annotationBean;
 	}
 	
-	@Bean
-	public ConsumerConfig consumerConfig() {
-		ConsumerConfig consumerConfig = new ConsumerConfig();
-		consumerConfig.setCheck(false);
-		consumerConfig.setRetries(0);
-		return consumerConfig;
-	}
 	
 }

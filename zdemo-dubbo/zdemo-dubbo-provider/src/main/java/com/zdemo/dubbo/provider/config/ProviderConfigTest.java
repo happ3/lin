@@ -34,10 +34,4 @@ public class ProviderConfigTest {
 		return annotationBean;
 	}
 	
-	@Bean
-	public ProviderConfig providerConfig() {
-		ProviderConfig providerConfig = new ProviderConfig();
-		providerConfig.setToken(true);
-		return providerConfig;
-	}
 }

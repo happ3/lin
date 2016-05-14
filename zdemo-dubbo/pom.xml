@@ -34,7 +34,6 @@
 	</dependencies>
 	<modules>
 		<module>zdemo-dubbo-provider</module>
-		<module>demo-dubbo-consumer</module>
 		<module>zdemo-dubbo-consumer</module>
 		<module>zdemo-inte</module>
 	</modules>
