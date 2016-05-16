@@ -1,0 +1,116 @@
+.navbar {
+	margin-bottom: 0;
+	border: 0;
+	border-radius: 0;
+}
+
+.contcss {
+	color: #fff;
+}
+
+.symbol {
+	width: 10px;
+	padding: 0 15px 0 5px;
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+.col-md-2 {
+	width: 128px;
+}
+
+.firstpage {
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+.containerfont {
+	background-image: url('../img/banner_06.png');
+	height: 500px;
+	background-repeat: no-repeat;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	padding-top: 90px;
+}
+
+@media ( max-width : 480px) {
+	.firtitle {
+		font-size: 16px;
+		text-align: center;
+	}
+	.sectitle {
+		font-size: 16px;
+		text-align: center;
+	}
+	.wordcss div:nth-child(1) {
+		font-size: 16pt;
+		font-family: 'STXingkai';
+	}
+}
+
+@media ( max-width : 768px) {
+	.firtitle {
+		font-size: 30px;
+		text-align: center;
+	}
+	.sectitle {
+		font-size: 30px;
+		text-align: center;
+	}
+	.wordcss div:nth-child(1) {
+		font-size: 14pt;
+		font-family: 'STXingkai';
+	}
+	.wordcss div:nth-child(2) {
+		font-size: 8pt;
+	}
+	.wordcss div:nth-child(4) {
+		font-size: 8pt;
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 980px) {
+	.firtitle {
+		font-size: 40px;
+		text-align: right;
+	}
+	.sectitle {
+		font-size: 40px;
+		text-align: left;
+	}
+	.wordcss div:nth-child(1) {
+		font-size: 40px;
+		font-family: 'STXingkai';
+	}
+}
+
+@media ( min-width :1200px) {
+	.firtitle {
+		font-size: 50px;
+		text-align: right;
+	}
+	.sectitle {
+		font-size: 50px;
+		text-align: left;
+	}
+	.wordcss div:nth-child(1) {
+		font-size: 50px;
+		font-family: 'STXingkai';
+	}
+}
+
+.wordcss {
+	padding-top: 90px;
+	height: 500px;
+	line-height: 100px;
+}
+
+.media-center{
+	padding: 20px;
+}
+.media-heading{
+	padding: 20px;
+}
+.media-body{
+	padding-bottom: 60px;
+}
