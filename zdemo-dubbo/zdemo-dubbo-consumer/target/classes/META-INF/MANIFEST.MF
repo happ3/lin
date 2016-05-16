@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: zdemo-dubbo-consumer
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: lhp
+Built-By: Administrator
 Implementation-Vendor-Id: zdemo-dubbo
 Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
