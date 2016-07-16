@@ -1,0 +1,42 @@
+本工程用于探索如何将文本转换成语音的方法。
+
+本工程编码方式：UTF-8
+
+参考http:
+
+7个开源的TTS（文本转语音）系统：http://blog.csdn.net/gaohuanjie/article/details/22647159
+
+3个开源TTS(一)——安装使用：http://blog.csdn.net/gaohuanjie/article/details/22648139
+
+3个开源TTS（二）eSpeak的简要分析使用：http://blog.csdn.net/gaohuanjie/article/details/22648499
+
+3个开源TTS（三）flite的简要分析与espeak的选择：http://blog.csdn.net/gaohuanjie/article/details/22648785
+
+3个开源TTS（四）eSpeak1.06的源码调试环境vim+vimgdb：http://blog.csdn.net/gaohuanjie/article/details/22648907
+
+3个开源TTS（五）eSpeak1.06的源码调试分析：http://blog.csdn.net/gaohuanjie/article/details/22649681
+
+说明：如果在64为Windows 7 OS上运行会出现如下异常：
+	Exception in thread "AWT-EventQueue-0" java.lang.UnsatisfiedLinkError: D:\MyEclipse10\TextToSpeech\bin\org\loon\framework\jtts\espeak_lib.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1778)
+		at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1674)
+		at java.lang.Runtime.load0(Runtime.java:770)
+		at java.lang.System.load(System.java:1005)
+		at org.loon.framework.jtts.Espeak$1.run(Espeak.java:67)
+		at java.security.AccessController.doPrivileged(Native Method)
+		at org.loon.framework.jtts.Espeak.loadLibrary(Espeak.java:38)
+		at org.loon.framework.jtts.JTTSImpl.<init>(JTTSImpl.java:34)
+		at org.loon.framework.jtts.Engine.getTTS(Engine.java:31)
+		at org.loon.framework.jtts.Engine.getTTS(Engine.java:39)
+		at com.ghj.packageofclient.Client.<init>(Client.java:54)
+		at com.ghj.packageofclient.Client.createGUI(Client.java:181)
+		at com.ghj.packageofclient.Client$1.run(Client.java:192)
+		at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+		at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+		at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+		at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+		at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+		at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+		at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+		at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
