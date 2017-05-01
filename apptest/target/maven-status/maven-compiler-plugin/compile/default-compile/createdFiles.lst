@@ -1,0 +1,10 @@
+com\ssm\mbg\plugin\CommentPlugin.class
+com\ssm\dao\impl\UserService.class
+com\ssm\controller\UserController.class
+com\ssm\repository\User.class
+com\ssm\mbg\plugin\MysqlPagingPlugin.class
+com\ssm\mbg\plugin\MyBatisGeneratorStarter.class
+com\ssm\dao\impl\IUserService.class
+com\ssm\mapper\UserMapper.class
+com\ssm\mbg\plugin\GroupByPlugin.class
+com\ssm\common\Page.class

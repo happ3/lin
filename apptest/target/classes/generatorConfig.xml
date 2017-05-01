@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- <classPathEntry location="C:/mywork/maven/maven-repos/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar" 
+		/> -->
+	<!-- 如果驱动在classpath下，例如通过maven依赖进来，则可以不在这里指定驱动位置 -->
+	<!-- <classPathEntry location="E:/repository/mysql/mysql-connector-java/5.1.29/mysql-connector-java-5.1.29.jar" 
+		/> -->
+	<context id="mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+		<property name="javaFileEncoding" value="UTF-8" />
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<!-- <plugin type="org.mybatis.generator.plugins.ToStringPlugin" /> -->
+		<plugin type="com.ssm.mbg.plugin.GroupByPlugin" />
+		<plugin type="com.ssm.mbg.plugin.MysqlPagingPlugin" />
+		<plugin type="com.ssm.mbg.plugin.CommentPlugin">
+			<!-- 制定java bean的作者，默认情况下会读取计算机当前用户作为作者 -->
+			<property name="modelClassAuthor" value="lin" />
+		</plugin>
+		<commentGenerator>
+			<!-- 不生成原生的注解信息 -->
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/test" userId="root"
+			password="root" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- java model 目标地 -->
+		<javaModelGenerator targetPackage="com.ssm.repository"
+			targetProject="D:/Test/test1/apptest/src/main/java">
+		</javaModelGenerator>
+		<!-- xml 目标地 -->
+		<sqlMapGenerator targetPackage="com.ssm.mapping"
+			targetProject="D:/Test/test1/apptest/src/main/java" />
+		<!-- mapper 目标地 -->
+		<javaClientGenerator targetPackage="com.ssm.mapper"
+			targetProject="D:/Test/test1/apptest/src/main/java"
+			type="XMLMAPPER" />
+<!-- 		<table tableName="%" > -->
+<!-- 			<generatedKey column="id" sqlStatement="MySql" identity = "true" type = "post"/> -->
+<!-- 		</table> -->
+
+			<table tableName="user_t" domainObjectName="User"
+            enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false"
+            selectByExampleQueryId="false"></table>
+	</context>
+</generatorConfiguration>
